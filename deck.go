@@ -31,6 +31,7 @@ func (d deck) print() {
 }
 
 func deal(d deck, handSize int) (deck, deck) {
+	fmt.Println(d[:handSize], d[handSize:])
 	return d[:handSize], d[handSize:]
 }
 
